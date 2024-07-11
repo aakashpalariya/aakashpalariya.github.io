@@ -136,7 +136,9 @@
     font-size: 1.25rem;
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 992px){
+
+  }
 
 
   @media screen and (max-width: 768px) {
@@ -178,7 +180,7 @@
         display: none;
     }
   }
-  }
+  
   @media screen and (max-width: 576px) {
     .home_content{
         grid-template-columns: 0.5fr 3fr;
