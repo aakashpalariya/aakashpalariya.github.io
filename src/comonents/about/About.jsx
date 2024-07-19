@@ -20,7 +20,7 @@ const About = () => {
                     <p class="about_description">
                         Specialized in custom application development, experienced with many projects.
                     </p>
-                    <p class="about_description2">
+                    <p class="about_description">
                         Customer-oriented and structured method of working, focused on quality and maintainability. Highly motivated to work in a team, both comfortable in big companies as in small teams.
                     </p>
                     <div class="about_button">
