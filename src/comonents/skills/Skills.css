@@ -31,7 +31,7 @@
 }
 
 .skills_data {
-    display: flex;
+    display: block;
     column-gap: 0.5rem;
 }
 
@@ -49,6 +49,63 @@
 .skills_level {
     font-size: var(--tiny-font-size);
 }
+
+.skills_list{
+    row-gap: 1.5rem;
+  }
+  
+  .skills_titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--mb-0-5);
+  }
+  
+  .skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+  }
+  
+  .skills_bar, .skills_percentage{
+    height: 8px;
+    border-radius: .25rem;
+  }
+  
+  .skills_bar{
+    background-color: var(--text-color);
+  }
+  
+  .skills_percentage{
+    display: block;
+    background-color: var(--title-color);
+  }
+  
+  .skills_html{
+    width: 70%;
+  }
+  .skills_sql{
+    width: 75%;
+  }
+  .skills_js{
+    width: 70%;
+  }
+  .skills_csharp{
+    width: 90%;
+  }
+  .skills_core{
+    width: 90%;
+  }
+  .skills_ef{
+    width: 70%;
+  }
+  .skills_api{
+    width: 80%;
+  }
+  .skills_angular{
+    width: 60%;
+  }
+  .skills_react{
+    width: 40%;
+  }
 
 
 /*=============== BREAKPOINTS ===============*/
