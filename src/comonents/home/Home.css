@@ -1,211 +1,136 @@
-
+/* ==================== HOME ==================== */
 .home_container{
-    row-gap: 7rem;
+  gap: 1rem;
 }
 
 .home_content{
-    /* grid-template-columns: .5fr 3fr; */
-    grid-template-columns: 116px repeat(2, 1fr);
-    padding-top: 5.5rem;
-    column-gap: 2rem;
-    /* padding-top: 3.5rem; */
-    align-items: center;
-  }
+  grid-template-columns: .5fr 3fr;
+  padding-top: 3.5rem;
+  align-items: center;
+}
 
-  .home_hand{
-    width: 38px;
-    height: 38px;
-    margin-left: 0.4rem;
-  }
+.home_social{
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
 
+.home_social-icon{
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.home_social-icon:hover{
+  color: var(--first-color-alt);
+}
+
+.home_blob{
+  width: 200px;
+  fill: var(--first-color);
+}
+
+.home_blob-img{
+  width: 170px;
+}
+
+.home_data{
+  grid-column: 1/3;
+}
+
+.home_title{
+  font-size: var(--big-font-size);
+}
+
+.home_subtitle{
+  font-size: var(--h3-font-size);
+  color: var(--text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home_description{
+  margin-bottom: var(--mb-2);
+}
+
+/* .home_scroll{
+  display: none;
+} */
+
+.home_scroll-button{
+  color: var(--first-color);
+  transition: .3s;
+}
+
+.home_scroll-button:hover{
+  transform: translateY(0.25rem);
+}
+
+.home_scroll-mouse{
+  font-size: 2rem;
+}
+
+.home_scroll-name{
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-left: var(--mb-0-25);
+}
+
+.home_scroll-arrow{
+  font-size: 1.25rem;
+}
+
+.home_img{
+  background: url(../../assets/profile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  /* order: 1; */
+  justify-self: center;
+  animation: profile_animate 8s ease-in-out infinite 1s;
+  box-shadow: inset 0 0 0 6px var(--title-color);
+}
+
+@keyframes profile_animate {
+  0%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+
+/* For medium devices */
+@media screen and (min-width: 568px){
+  .home_content{
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home_data{
+    grid-column: initial;
+  }
   .home_img{
-    background: url(../../assets/profile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
     order: 1;
     justify-self: center;
-    animation: profile_animate 8s ease-in-out infinite 1s;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+  }
+}
+
+
+/* For large devices */
+@media screen and (min-width:1024px){
+  .header, .main, .footer_container{
+    padding: 0;
   }
 
-  @keyframes profile_animate {
-    0%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
-    50%{
-        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-    }
-    100%{
-        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-    }
+  .home_blob{
+    width: 320px;
   }
-  
   .home_social{
-    display: grid;
-    grid-template-columns: max-content;
-    row-gap: 1rem;
+    transform: translateX(-6rem);
   }
-  
-  .home_social-icon{
-    font-size: 1.25rem;
-    color: var(--first-color);
-  }
-  
-  .home_social-icon:hover{
-    color: var(--first-color-alt);
-  }
-  
-  /* .home_blob{
-    width: 200px;
-    fill: var(--first-color);
-  }
-  
-  .home_blob-img{
-    width: 170px;
-  } */
-  
-  /* .home_data{
-    grid-column: 1/3;
-  }
-   */
-   
-  .button--flex{
-    display: inline-flex;
-    align-items: center;
-  }
-  .home_title{
-    font-size: var(--big-font-size);
-    margin-bottom: var(--mb-0-25);
-  }
-  
-  .home_subtitle{
-    /* position: relative;
-    padding-left: 5.4rem; */
-    font-size: var(--h3-font-size);
-    color: var(--text-color);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
-  }
-  /* .home_subtitle::before{
-    content: '';
-    position: absolute;
-    width: 70px;
-    height: 1px;
-    background-color: var(--text-color);
-    left: 0;
-    top: 1rem;
-  } */
-  
-  .home_description{
-    max-width: 400px;
-    margin-bottom: var(--mb-2);
-  }
-  
-  /* .home_scroll{
-    display: none;
-  } */
-
-   .home_scroll{
-    margin-left: 4.25rem;
-  }
-
-  .home_scroll-button{
-    color: var(--first-color);
-    transition: .3s;
-  }
-  
-  .home_scroll-button:hover{
-    transform: translateY(0.25rem);
-  }
-  
-  .home_scroll-mouse{
-    font-size: 2rem;
-  }
-  
-  .home_scroll-name{
-    font-size: var(--small-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
-    margin-left: var(--mb-0-25);
-  }
-  
-  .home_scroll-arrow{
-    font-size: 1.25rem;
-  }
-
-  @media screen and (max-width: 992px){
-
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .home_content{
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.25rem;
-        align-items: center;
-    }
-
-    .home_hand{
-        width: 26px;
-        height: 26px;
-    }
-
-    .home_subtitle{
-        padding-left: 3.75rem;
-        margin-bottom: var(--mb-2);
-    }
-
-    .home_subtitle::before{
-        width: 42px;
-        top: 0.8rem;
-    }
-
-    .home_description{
-        max-width: initial;
-        margin-bottom: var(--mb-2-5);
-    }
-    .home_img{
-        width: 250px;
-        height: 250px;
-        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
-
-    }
-    .home_scroll{
-        margin-left: 7.5rem;
-    }
-    .home_scroll{
-        display: none;
-    }
-  }
-  
-  @media screen and (max-width: 576px) {
-    .home_content{
-        grid-template-columns: 0.5fr 3fr;
-        padding-top: 3.5rem;
-    }
-    .home_img{
-        order: initial;
-        justify-self: initial;
-    }
-    .home_data {
-        grid-column:1/3;
-    }
-    .home_img{
-        width: 200px;
-        height: 200px;
-        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
-
-    }
-  }
-
-  @media screen and (max-width: 350px) {
-    .home_img{
-        width: 180px;
-        height: 180px;
-        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
-
-    }
-  }
+}

@@ -2,21 +2,18 @@ import React from 'react'
 
 const Info = () => {
     return (
-        <div class="about_info grid">
-            <div className='about_box'>
-            <i class="uil uil-award about_icon"></i>
-                <span class="about_info-title">Experience</span>
-                <span class="about_info-subtitle">6 Years </span>
+        <div className="about_info">
+            <div className="about_box">
+                <span className="about_info-title">6</span>
+                <span className="about_info-name">Years experience</span>
             </div>
-            <div className='about_box'>
-            <i class="uil uil-briefcase-alt about_icon"></i>
-                <span class="about_info-title">Completed</span>
-                <span class="about_info-subtitle">20 project</span>
+            <div className="about_box">
+                <span className="about_info-title">20</span>
+                <span className="about_info-name">Completed project</span>
             </div>
-            <div className='about_box'>
-            <i class="uil uil-phone-volume about_icon"></i>
-                <span class="about_info-title">Companies</span>
-                <span class="about_info-subtitle">5 worked</span>
+            <div className="about_box">
+                <span className="about_info-title">5</span>
+                <span className="about_info-name">Companies worked</span>
             </div>
         </div>
     )

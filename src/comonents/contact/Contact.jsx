@@ -4,57 +4,57 @@ import "./Contact.css"
 const Contact = () => {
     return (
         <section className="contact section" id="contact">
-            <h2 class="section_title">Contact Me</h2>
-            <span class="section_subtitle">Get in touch</span>
+            <h2 className="section_title">Contact Me</h2>
+            <span className="section_subtitle">Get in touch</span>
 
-            <div class="container contact_container grid">
+            <div className="container contact_container grid">
                 <div>
-                    <div class="contact_info">
-                        <i class="uil uil-phone contact_icon"></i>
+                    <div className="contact_info">
+                        <i className="uil uil-phone contact_icon"></i>
                         <div>
-                            <h3 class="contact_title">Call Me</h3>
-                            <span class="contact_subtitle">8954 6346 20</span>
+                            <h3 className="contact_title">Call Me</h3>
+                            <span className="contact_subtitle">8954 6346 20</span>
                         </div>
                     </div>
 
-                    <div class="contact_info">
-                        <i class="uil uil-envelope contact_icon"></i>
+                    <div className="contact_info">
+                        <i className="uil uil-envelope contact_icon"></i>
                         <div>
-                            <h3 class="contact_title">Email</h3>
-                            <span class="contact_subtitle">aakashpalariya@hotmail.com</span>
+                            <h3 className="contact_title">Email</h3>
+                            <span className="contact_subtitle">aakashpalariya@hotmail.com</span>
                         </div>
                     </div>
 
-                    <div class="contact_info">
-                        <i class="uil uil-map-marker contact_icon"></i>
+                    <div className="contact_info">
+                        <i className="uil uil-map-marker contact_icon"></i>
                         <div>
-                            <h3 class="contact_title">Location</h3>
-                            <span class="contact_subtitle">Noida, Uttar Pradesh</span>
+                            <h3 className="contact_title">Location</h3>
+                            <span className="contact_subtitle">Noida, Uttar Pradesh</span>
                         </div>
                     </div>
                 </div>
 
-                <form action="" class="contact_form grid">
-                    <div class="contact_inputs grid">
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Name</label>
-                            <text type="text" class="contact_input"></text>
+                <form action="" className="contact_form grid">
+                    <div className="contact_inputs grid">
+                        <div className="contact_content">
+                            <label for="" className="contact_label">Name</label>
+                            <input type="text" placeholder="Your name" className="contact_input"></input>
                         </div>
-                        <div class="contact_content">
-                            <label for="" class="contact_label">Email</label>
-                            <text type="email" class="contact_input"></text>
+                        <div className="contact_content">
+                            <label for="" className="contact_label">Email</label>
+                            <input type="email" placeholder='Your email' className="contact_input"></input>
                         </div>
                     </div>
 
-                    <div class="contact_content">
-                        <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    <div className="contact_content">
+                        <label for="" className="contact_label">Message</label>
+                        <textarea placeholder='Enter your message here...' name="" id="" cols="0" rows="7" className="contact_input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button-flex">
+                        <a href="#" className="button button-flex">
                             Send Message
-                            <i class="uil uil-message button button-icon"></i>
+                            <i className="uil uil-message button button-icon"></i>
                         </a>
                     </div>
                 </form>
