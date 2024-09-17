@@ -128,6 +128,12 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  border: none;
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -164,6 +170,16 @@ img {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+
+/*==================== TOAST ====================*/
+
+.toast_hot {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--body-color);
+  background-color: var(--title-color);
+  font-weight: var(--font-medium);
 }
 
 /*==================== BUTTONS ====================*/
