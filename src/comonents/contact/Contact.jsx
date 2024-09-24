@@ -60,15 +60,16 @@ const Contact = () => {
                     </div>
                 </div>
 
-                <form ref={form} onSubmit={sendEmail} className="contact_form grid">
+                {/* <form ref={form} onSubmit={sendEmail} className="contact_form grid"> */}
+                <form className="contact_form grid">
                     <div className="contact_inputs grid">
                         <div className="contact_content">
                             <label className="contact_label">Name</label>
-                            <input required type="text" placeholder="Your name" name="user_name" className="contact_input"></input>
+                            <input type="text" placeholder="Your name" name="user_name" className="contact_input"></input>
                         </div>
                         <div className="contact_content">
                             <label className="contact_label">Email</label>
-                            <input required type="email" placeholder='Your email' name="user_email" className="contact_input"></input>
+                            <input type="email" placeholder='Your email' name="user_email" className="contact_input"></input>
                         </div>
                     </div>
 
